@@ -19,9 +19,11 @@ public class Main {
         bird.colorAnimal();
         cat.colorAnimal();
         dog.colorAnimal();
-        Horse horse = new Horse("fifi",8,"white","green");
+        Horse horse = new Horse("fifi", 8, "white", "green");
         horse.colorAnimal();
         horse.giveVoice();
+        horse.colorEyes();
+        horse.age();
     }
 }
 // obiektem staje sie dopiero klasa kiedy ja aktywujemy poprzez uzycie konstruktora(new)

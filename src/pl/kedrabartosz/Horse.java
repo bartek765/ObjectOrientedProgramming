@@ -13,10 +13,24 @@ public class Horse {
         this.color = color;
         this.eyecolor = eyecolor;
     }
-    public void giveVoice(){
+
+    public void giveVoice() {
         System.out.println(this.name + "makes ichacha");
     }
-    public void colorAnimal(){
+
+    public void colorAnimal() {
         System.out.println("this horse have " + this.color + " color");
+    }
+
+    public void colorEyes() {
+        System.out.println("this horse have " + this.eyecolor + " color eyes");
+    }
+
+    public void age() {
+        if (this.age > 2) {
+            System.out.println("kon jest starszy!");
+        } else {
+            System.out.println("ten kon jest jeszcze mlody!");
+        }
     }
 }

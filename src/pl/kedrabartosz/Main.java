@@ -12,6 +12,9 @@ public class Main {
 
         Cat cat1 = new Cat("filemon", 3, "bialy");
         cat1.giveVoice();
+        System.out.println(cat1.getName());
+        cat1.setName("dachowiec");
+        System.out.println(cat1.getName());
         Dog dog = new Dog("pluto", 1, "bialy", 1, "jamnik", "niebieskie");
         dog.giveVoice();
         Bird bird = new Bird("lelek", 2, "black", 2, 1, "eagle", "blue");

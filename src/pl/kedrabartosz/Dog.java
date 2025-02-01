@@ -1,26 +1,18 @@
 package pl.kedrabartosz;
 
-public class Dog {
-    private String name;
-    private int age;
-    private String color;
-    private double size;
-    private String breed;
-    private String eyeColor;
+public class Dog extends Animal {
+
 
     public Dog(String name, int age, String color, double size, String breed, String eyeColor) {
-        this.name = name;
-        this.age = age;
-        this.color = color;
-        this.size = size;
-        this.breed = breed;
-        this.eyeColor = eyeColor;
+        super(name, age, color);
     }
 
+    @Override
     public void giveVoice() {
-        System.out.println(this.name + " woof woof");
+        System.out.println(this.getName() + " woof woof");
     }
-    public void colorAnimal(){
-        System.out.println("he have "+ this.color  +" color");
+
+    public void colorAnimal() {
+        System.out.println("he have " + this.getName() + " color");
     }
 }

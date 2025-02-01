@@ -1,47 +1,23 @@
 package pl.kedrabartosz;
 
-public class Cat {
-    // cechy = pola (field) - co klasa MA
-    private String name;
-    private int age;
-    private String color;
+public class Cat extends Animal {
+
 
     //konstruktor - zawsze zwraca nowy obiekt (cat)
-    public Cat(String newName, int newAge, String newColour){
-        this.name = newName;
-        this.age = newAge;
-        this.color = newColour;
+    public Cat(String newName, int newAge, String newColour) {
+        super(newName, newAge, newColour);
+
     }
-    
+
     // metoda (method) to to co obiekt *UMIE ROBIĆ* (czasownik)
-    public void giveVoice(){
-        System.out.println(this.name + " makes meooooow");
-    }
-    public void colorAnimal(){
-        System.out.println("he have "+ this.color  +" color");
+    @Override
+    public void giveVoice() {
+        System.out.println(this.getName() + " makes meooooow");
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void colorAnimal() {
+        System.out.println("he have " + this.getName() + " color");
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getColor() {
-        return color;
-    }
 }

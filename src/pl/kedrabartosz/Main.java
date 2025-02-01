@@ -1,6 +1,10 @@
 package pl.kedrabartosz;
 
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
 public class Main {
     public static void main(String[] args) {
         // <typ> <nazwa> = <wartość>
@@ -25,8 +29,32 @@ public class Main {
         Horse horse = new Horse("fifi", 8, "white", "green");
         horse.colorAnimal();
         horse.giveVoice();
-        horse.colorEyes();
         horse.age();
+
+        List<Animal> zoo = new ArrayList<>();
+        zoo.add(cat1);
+        // zoo.add(horse);
+        // zoo.add(bird);
+        // zoo.add(dog);
+        System.out.println("**");
+        for (int i = 0; i < zoo.size(); i++) {
+            Animal animal = zoo.get(i);
+            animal.giveVoice();
+        /*    Object animal = zoo.get(i);
+            if (animal instanceof Cat cat2) {
+                cat2.giveVoice();
+            }
+            if (animal instanceof Dog dog2) {
+                dog2.giveVoice();
+            }
+            if (animal instanceof Horse horse2) {
+                horse2.giveVoice();
+            }
+            if (animal instanceof Bird bird2) {
+                bird2.giveVoice();
+            }*/
+        }
+
     }
 }
 // obiektem staje sie dopiero klasa kiedy ja aktywujemy poprzez uzycie konstruktora(new)

@@ -1,33 +1,23 @@
 package pl.kedrabartosz;
 
-public class Horse {
-    private String name;
-    private int age;
-    private String color;
-    private String eyecolor;
+public class Horse extends Animal {
 
 
     public Horse(String name, int age, String color, String eyecolor) {
-        this.name = name;
-        this.age = age;
-        this.color = color;
-        this.eyecolor = eyecolor;
+        super(name, age, color);
     }
-
+    @Override
     public void giveVoice() {
-        System.out.println(this.name + "makes ichacha");
+        System.out.println(this.getName() + "makes ichacha");
     }
 
     public void colorAnimal() {
-        System.out.println("this horse have " + this.color + " color");
+        System.out.println("this horse have " + this.getColor() + " color");
     }
 
-    public void colorEyes() {
-        System.out.println("this horse have " + this.eyecolor + " color eyes");
-    }
 
     public void age() {
-        if (this.age > 2) {
+        if (this.getAge() > 2) {
             System.out.println("kon jest starszy!");
         } else {
             System.out.println("ten kon jest jeszcze mlody!");

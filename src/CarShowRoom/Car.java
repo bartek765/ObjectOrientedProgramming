@@ -11,7 +11,7 @@ public class Car {
         this.fourWheels = fourWheels;
     }
 
-    public void drive(){
+    public void drive() {
         System.out.println("we drive");
     }
 }

@@ -14,7 +14,7 @@ public class Manager extends Employee {
     }
 
     public void managerWork() {
-        System.out.println("manager make work" + getName());
+        System.out.println("manager  " + getName() + " is working");
     }
 
     @Override
@@ -27,5 +27,6 @@ public class Manager extends Employee {
             Employee employee = employees.get(i);
             employee.employeeWork();
         }
+        System.out.println("my employees are working");
     }
 }

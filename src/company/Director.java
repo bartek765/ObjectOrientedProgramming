@@ -3,11 +3,14 @@ package company;
 import java.util.List;
 
 public class Director extends Manager {
-    private List<Employee> employees;
     private List<Manager> managers;
 
     public Director(String name, String surname) {
         super(name, surname);
+    }
+
+    public void setManagers(List<Manager> managers) {
+        this.managers = managers;
     }
 
     public void managerMustWork() {
@@ -15,6 +18,7 @@ public class Director extends Manager {
             Manager manager = managers.get(i);
             manager.managerWork();
         }
+        System.out.println("my managers are working");
     }
 
     @Override
@@ -27,8 +31,5 @@ public class Director extends Manager {
         super.managerWork();
     }
 
-    @Override
-    public void setEmployees(List<Employee> employees) {
-        this.employees = employees;
-    }
+
 }

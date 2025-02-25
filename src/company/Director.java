@@ -20,16 +20,4 @@ public class Director extends Manager {
         }
         System.out.println("my managers are working");
     }
-
-    @Override
-    public void employeeWork() {
-        super.employeeWork();
-    }
-
-    @Override
-    public void managerWork() {
-        super.managerWork();
-    }
-
-
 }

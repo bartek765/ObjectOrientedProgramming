@@ -7,7 +7,8 @@ public class Runner {
         Glases glases = new Glases();
         Car car = new Car(steeringWheel, glases, fourWheels);
         car.drive();
-
-
+        AirConditioning airConditioning = new AirConditioning();
+        BetterCar betterCar = new BetterCar(steeringWheel,glases,fourWheels,airConditioning);
+        TheBestCar theBestCar = new TheBestCar(steeringWheel,glases,fourWheels,airConditioning);
     }
 }

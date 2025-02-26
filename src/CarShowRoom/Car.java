@@ -12,6 +12,6 @@ public class Car {
     }
 
     public void drive() {
-        System.out.println("we drive");
+        System.out.println("Standard car is driving");
     }
 }

@@ -1,4 +1,4 @@
-package CarShowRoom;
+package pl.kedrabartosz.carshowroom;
 
 public class TheBestCar extends BetterCar{
     public TheBestCar(SteeringWheel steeringWheel, Glases glases,

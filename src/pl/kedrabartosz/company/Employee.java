@@ -1,4 +1,4 @@
-package company;
+package pl.kedrabartosz.company;
 
 public class Employee {
     private String name;

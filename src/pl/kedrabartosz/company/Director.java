@@ -1,4 +1,4 @@
-package company;
+package pl.kedrabartosz.company;
 
 import java.util.List;
 

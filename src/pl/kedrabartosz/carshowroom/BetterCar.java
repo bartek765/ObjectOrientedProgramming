@@ -1,4 +1,4 @@
-package CarShowRoom;
+package pl.kedrabartosz.carshowroom;
 
 public class BetterCar extends Car {
     private AirConditioning airConditioning;

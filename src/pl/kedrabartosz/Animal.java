@@ -1,6 +1,6 @@
 package pl.kedrabartosz;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
     private String color;
@@ -11,9 +11,7 @@ public class Animal {
         this.color = color;
     }
 
-    public void giveVoice() {
-        System.out.println(this.name + " gives voice");
-    }
+    public abstract void giveVoice();
 
     public void setName(String name) {
         this.name = name;

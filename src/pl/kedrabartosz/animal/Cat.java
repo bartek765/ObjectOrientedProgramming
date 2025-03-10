@@ -1,4 +1,4 @@
-package pl.kedrabartosz;
+package pl.kedrabartosz.animal;
 
 public class Cat extends Animal {
 

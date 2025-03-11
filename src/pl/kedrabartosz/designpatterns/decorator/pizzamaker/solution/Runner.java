@@ -6,10 +6,10 @@ public class Runner {
         PizzaFunghi pizzaFunghi = new PizzaFunghi("champignons", pizzaMargaritha);
         pizzaFunghi.makePizza();
 
-        PizzaPepperoni pizzaPepperoni = new PizzaPepperoni("mozarella", "pepper", pizzaMargaritha);
+        PizzaPepperoni pizzaPepperoni = new PizzaPepperoni("pepper", pizzaMargaritha);
         pizzaPepperoni.makePizza();
 
-        PizzaPepperoni newpizza = new PizzaPepperoni("mozzarella", "pepper", pizzaFunghi);
+        PizzaPepperoni newpizza = new PizzaPepperoni("pepper",  pizzaFunghi);
         newpizza.makePizza();
 
     }

@@ -4,7 +4,7 @@ public class PizzaPepperoni extends PizzaMargaritha {
     private String pepper;
     private PizzaMargaritha basePizza;
 
-    public PizzaPepperoni(String cheese, String pepper, PizzaMargaritha basepizza) {
+    public PizzaPepperoni(String pepper, PizzaMargaritha basepizza) {
         super(basepizza.getCheese());
         this.pepper = pepper;
         this.basePizza = basepizza;
@@ -13,6 +13,6 @@ public class PizzaPepperoni extends PizzaMargaritha {
     @Override
     public void makePizza() {
         System.out.println(pepper);
-        super.makePizza();
+        basePizza.makePizza();
     }
 }

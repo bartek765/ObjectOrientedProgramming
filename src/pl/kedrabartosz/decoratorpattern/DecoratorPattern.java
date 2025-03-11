@@ -98,16 +98,16 @@ Niepoprawne dziedziczenie – wzorzec Dekorator powinien używać kompozycji zam
 Zamiast super.printFace() powinno być face.printFace(), aby metoda była delegowana do dekorowanego obiektu.
  */
 //exercise 13
-/*
+
 // Bazowa klasa
-public class Hala {
-    public String hostShow() {
-        return "Hala organizuje wydarzenie.";
-    }
-}
+//public class Hala {
+   // public String hostShow() {
+    //    return "Hala organizuje wydarzenie.";
+  //  }
+//}
 
 // Dekorator bazowy
-public abstract class HalaDekorator extends Hala {
+/*public abstract class HalaDekorator extends Hala {
     protected Hala hala;
 
     public HalaDekorator(Hala hala) {
@@ -119,39 +119,16 @@ public abstract class HalaDekorator extends Hala {
         return hala.hostShow();
     }
 }
-
+*/
 // Dekorator 1: Hala Sportowa
-public class HalaSportowa extends HalaDekorator {
-    public HalaSportowa(Hala hala) {
-        super(hala);
-    }
 
-    @Override
-    public String hostShow() {
-        return super.hostShow() + " Teraz przystosowana do zawodów sportowych!";
-    }
-}
 
 // Dekorator 2: Hala Widowiskowa
-public class HalaWidowiskowa extends HalaDekorator {
-    public HalaWidowiskowa(Hala hala) {
-        super(hala);
-    }
 
-    @Override
-    public String hostShow() {
-        return super.hostShow() + " Teraz przystosowana do koncertów i spektakli!";
-    }
-}
 
 // Main
-public class Main {
-    public static void main(String[] args) {
-        Hala hala = new HalaWidowiskowa(new HalaSportowa(new Hala()));
-        System.out.println(hala.hostShow());
-    }
-}
 
+/*
 // Bazowa klasa
 public class Statek {
     public String takeOff() {

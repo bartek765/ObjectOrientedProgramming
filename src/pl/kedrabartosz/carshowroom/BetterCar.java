@@ -8,7 +8,8 @@ public class BetterCar extends Car {
         super(steeringWheel, glases, fourWheels);
         this.airConditioning = airConditioning;
     }
-    public void playMusic(){
+
+    public void playMusic() {
         System.out.println("I play music");
     }
 }

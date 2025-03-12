@@ -1,8 +1,8 @@
-package pl.kedrabartosz.decoratorpattern;
+package pl.kedrabartosz.decoratorpattern.hall;
 
 public class Runner {
     public static void main(String[] args) {
-        Hala hala = new HalaWidowiskowa(new HalaSportowa(new Hala()));
+        Hall hala = new HallEntertainment(new HallSport(new Hall()));
         System.out.println(hala.hostShow());
     }
 }

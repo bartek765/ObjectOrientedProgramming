@@ -1,7 +1,7 @@
 package pl.kedrabartosz.decoratorpattern.ship;
 
 public class Ship {
-    public String takeOff() {
-        return "\nShip go on sea";
+    public void takeOff() {
+        System.out.println("Ship go on sea");
     }
 }

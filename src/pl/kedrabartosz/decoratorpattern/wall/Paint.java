@@ -6,7 +6,7 @@ public class Paint extends WallDecorator {
     }
 
     @Override
-    public String create() {
-        return super.create() + "\nPaint Wall!";
+    public void create() {
+        System.out.println("\nPaint Wall");
     }
 }

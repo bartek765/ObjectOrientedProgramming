@@ -6,7 +6,7 @@ public class ShipTouristic extends ShipDecorator {
     }
 
     @Override
-    public String takeOff() {
-        return super.takeOff() + "\nHave a luxury cabine!";
+    public void takeOff() {
+        System.out.println("\nHave a luxury cabine!");
     }
 }

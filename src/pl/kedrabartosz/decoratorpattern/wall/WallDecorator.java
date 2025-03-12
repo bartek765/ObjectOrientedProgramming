@@ -3,12 +3,12 @@ package pl.kedrabartosz.decoratorpattern.wall;
 public abstract class WallDecorator extends Wall {
     protected Wall wall;
 
-    public WallDecorator(Wall sciana) {
-        this.wall = sciana;
+    public WallDecorator(Wall wall) {
+        this.wall = wall;
     }
 
     @Override
-    public String create() {
-        return wall.create();
+    public void create() {
+        wall.create();
     }
 }

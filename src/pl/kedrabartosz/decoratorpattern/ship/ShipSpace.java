@@ -6,7 +6,7 @@ public class ShipSpace extends ShipDecorator {
     }
 
     @Override
-    public String takeOff() {
-        return super.takeOff() + "\nReady to mission space!";
+    public void takeOff() {
+        System.out.println("\nReady to mission space!");
     }
 }

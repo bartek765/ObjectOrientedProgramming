@@ -9,8 +9,5 @@ class HallEntertainment extends HallDecorator {
     @Override
     public void hostShow() {
         System.out.println("\nNow adapted for concerts and performances!");
-      //  hall.hostShow();
-
-
     }
 }

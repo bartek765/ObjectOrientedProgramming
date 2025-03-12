@@ -8,7 +8,7 @@ public abstract class ShipDecorator extends Ship {
     }
 
     @Override
-    public String takeOff() {
-        return ship.takeOff();
+    public void takeOff() {
+        ship.takeOff();
     }
 }

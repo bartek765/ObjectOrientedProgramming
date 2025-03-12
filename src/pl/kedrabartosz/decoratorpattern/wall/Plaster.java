@@ -6,7 +6,8 @@ public class Plaster extends WallDecorator {
     }
 
     @Override
-    public String create() {
-        return super.create() + "\na coat of glaze was applied\n.";
+    public void create() {
+        System.out.println("\na coat of glaze was applied");
+
     }
 }

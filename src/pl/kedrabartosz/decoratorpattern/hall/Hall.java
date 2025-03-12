@@ -1,7 +1,7 @@
 package pl.kedrabartosz.decoratorpattern.hall;
 
 public class Hall {
-    public String hostShow() {
-        return "Hall organize tournament.";
+    public void hostShow() {
+        System.out.println("Hall organize tournament.");
     }
 }

@@ -2,7 +2,11 @@ package pl.kedrabartosz.decoratorpattern.hall;
 
 public class Runner {
     public static void main(String[] args) {
-        Hall hala = new HallEntertainment(new HallSport(new Hall()));
-        System.out.println(hala.hostShow());
+        Hall hall = new HallEntertainment(new HallSport(new Hall()));
+        Hall hallSport = new HallSport(hall);
+        Hall hall1 = new Hall();
+        hall.hostShow();
+        hallSport.hostShow();
+        hall1.hostShow();
     }
 }

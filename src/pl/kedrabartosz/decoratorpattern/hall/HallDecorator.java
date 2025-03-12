@@ -3,12 +3,13 @@ package pl.kedrabartosz.decoratorpattern.hall;
 public abstract class HallDecorator extends Hall {
     protected Hall hall;
 
-    public HallDecorator(Hall hala) {
-        this.hall = hala;
+    public HallDecorator(Hall hall) {
+        this.hall = hall;
     }
 
     @Override
-    public String hostShow() {
-        return hall.hostShow();
+    public void hostShow() {
+        hall.hostShow();
+
     }
 }

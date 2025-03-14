@@ -1,4 +1,4 @@
-package pl.kedrabartosz.designpatterns.strategy.strategypattern;
+package pl.kedrabartosz.designpatterns.strategy.strategypattern.reading;
 
 public class Person {
     private ReadingSpeed readingSpeed;

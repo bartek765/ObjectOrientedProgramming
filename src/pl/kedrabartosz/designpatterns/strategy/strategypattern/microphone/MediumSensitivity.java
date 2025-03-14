@@ -1,4 +1,4 @@
-package pl.kedrabartosz.designpatterns.strategy.strategypattern;
+package pl.kedrabartosz.designpatterns.strategy.strategypattern.microphone;
 
 public class MediumSensitivity implements MicrophoneSensitivity {
     public String captureSound(String sound) {

@@ -1,4 +1,4 @@
-package pl.kedrabartosz.designpatterns.strategy.strategypattern;
+package pl.kedrabartosz.designpatterns.strategy.strategypattern.vehicle;
 
 public class Vehicle {
     private MovementSpeed movementSpeed;

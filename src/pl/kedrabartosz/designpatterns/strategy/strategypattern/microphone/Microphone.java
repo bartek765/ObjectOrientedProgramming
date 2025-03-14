@@ -1,4 +1,4 @@
-package pl.kedrabartosz.designpatterns.strategy.strategypattern;
+package pl.kedrabartosz.designpatterns.strategy.strategypattern.microphone;
 
 public class Microphone {
     private MicrophoneSensitivity sensitivity;

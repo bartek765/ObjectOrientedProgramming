@@ -1,4 +1,4 @@
-package pl.kedrabartosz.designpatterns.strategy;
+package pl.kedrabartosz.designpatterns.strategy.strategypattern.lamp;
 
 public class Lamp {
     private boolean isTurnedOn;

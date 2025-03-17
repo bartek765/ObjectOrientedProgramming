@@ -1,4 +1,4 @@
-package pl.kedrabartosz.designpatterns.strategy;
+package pl.kedrabartosz.designpatterns.strategy.strategypattern.lamp;
 
 public class WarmLightBulb implements Bulb, LED {
     @Override

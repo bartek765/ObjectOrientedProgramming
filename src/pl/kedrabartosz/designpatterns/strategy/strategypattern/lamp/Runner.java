@@ -1,4 +1,4 @@
-package pl.kedrabartosz.designpatterns.strategy;
+package pl.kedrabartosz.designpatterns.strategy.strategypattern.lamp;
 
 public class Runner {
     public static void main(String[] args) {

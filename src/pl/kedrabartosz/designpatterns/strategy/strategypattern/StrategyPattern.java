@@ -92,4 +92,14 @@ polimorfizm
 
 Tak, w strategii każda klasa implementująca, dostarcza wlasna implementacje
  */
-//exercise 14
+//exercise 20
+/*
+Rozbudowanych instrukcji warunkowych (if-else lub switch-case), które określają
+ różne zachowania w jednej klasie. Zamiast tego logika jest delegowana do
+ osobnych klas implementujących wspólny interfejs.
+Duplikacji kodu – jeśli różne klasy mają podobne metody różniące się jedynie
+ szczegółami implementacji, można je wydzielić jako strategie.
+Silnego sprzężenia – kod nie jest ściśle powiązany z konkretnymi
+mplementacjami. Można dynamicznie zmieniać zachowanie obiektu bez
+ modyfikowania jego kodu.
+ */

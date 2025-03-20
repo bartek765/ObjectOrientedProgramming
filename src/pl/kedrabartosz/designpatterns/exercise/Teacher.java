@@ -3,16 +3,21 @@ package pl.kedrabartosz.designpatterns.exercise;
 import java.util.Scanner;
 
 public class Teacher {
-    //pola powinny byc prywatne
-    //powinnismy je ustawic przez konstruktor
-    AnswerHomework answerHomework = new AnswerHomework();
-    BasicHomework basicHomework = new BasicHomework();
-    ShortenArticleHomework shortenArticleHomework = new ShortenArticleHomework();
-    ReadAnswerShortenAndLearnByHeartHomework readAnswerShortenAndLearnByHeartHomework
-            = new ReadAnswerShortenAndLearnByHeartHomework();
-    ReadAnswerQuestionLearnByHeartHomework readAnswerQuestionLearnByHeartHomework =
-            new ReadAnswerQuestionLearnByHeartHomework();
-// juz jest duzo pol bo jest ponad 4 i gdyby doszla kolejna werjsa
+    private AnswerHomework answerHomework;
+    private BasicHomework basicHomework;
+    private ShortenArticleHomework shortenArticleHomework;
+    private ReadAnswerShortenAndLearnByHeartHomework readAnswerShortenAndLearnByHeartHomework;
+    private ReadAnswerQuestionLearnByHeartHomework readAnswerQuestionLearnByHeartHomework;
+
+    public Teacher(AnswerHomework answerHomework, BasicHomework basicHomework, ShortenArticleHomework shortenArticleHomework, ReadAnswerShortenAndLearnByHeartHomework readAnswerShortenAndLearnByHeartHomework, ReadAnswerQuestionLearnByHeartHomework readAnswerQuestionLearnByHeartHomework) {
+        this.answerHomework = answerHomework;
+        this.basicHomework = basicHomework;
+        this.shortenArticleHomework = shortenArticleHomework;
+        this.readAnswerShortenAndLearnByHeartHomework = readAnswerShortenAndLearnByHeartHomework;
+        this.readAnswerQuestionLearnByHeartHomework = readAnswerQuestionLearnByHeartHomework;
+    }
+
+    // juz jest duzo pol bo jest ponad 4 i gdyby doszla kolejna werjsa
 // zadania domowego to by trzeba bylo dalej dodac kolejne pola oraz ifa
     public void doHomework() {
         System.out.println("which options select?"); // ta metoda robi 2 rzeczy

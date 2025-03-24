@@ -1,9 +1,18 @@
 package pl.kedrabartosz.designpatterns.exercise;
 
-public class AnswerHomework {
+import java.util.BitSet;
 
+//answer  - basic + "odpoweidzi"
+public class AnswerHomework extends BasicHomework {
+    private BasicHomework basicHomework;
+
+  public AnswerHomework(BasicHomework basicHomework) {
+      this.basicHomework = basicHomework;
+  }
+
+  @Override
     public void doHomework() {
-        System.out.println("read an article");
-        System.out.println("and answer questions");
-    }
+      this.basicHomework.doHomework();
+      System.out.println("and answer questions");
+  }
 }

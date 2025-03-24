@@ -20,17 +20,13 @@ public class Teacher {
     // juz jest duzo pol bo jest ponad 4 i gdyby doszla kolejna werjsa
 // zadania domowego to by trzeba bylo dalej dodac kolejne pola oraz ifa
     public void doHomework() {
-        System.out.println("which options select?"); // ta metoda robi 2 rzeczy
-        // wybiera i zadaje zadnaie domowe
-        Scanner scanner = new Scanner(System.in);
-        int option = scanner.nextInt();
-        if (option == 1) {//jest ifologia
+        if (basicHomework != null) {
             basicHomework.doHomework();
-        } else if (option == 2) {
+        } else if (answerHomework != null) {
             answerHomework.doHomework();
-        } else if (option == 3) {
+        } else if (shortenArticleHomework != null) {
             shortenArticleHomework.doHomework();
-        } else if (option == 4) {
+        } else if (readAnswerShortenAndLearnByHeartHomework != null) {
             readAnswerShortenAndLearnByHeartHomework.doHomework();
         } else {
             readAnswerQuestionLearnByHeartHomework.doHomework();

@@ -7,7 +7,7 @@ public class Runner {
         ShortenArticleHomework shortenArticleHomework = new ShortenArticleHomework();
         ReadAnswerQuestionLearnByHeartHomework readAnswerQuestionLearnByHeartHomework = new ReadAnswerQuestionLearnByHeartHomework();
         ReadAnswerShortenAndLearnByHeartHomework readAnswerShortenAndLearnByHeartHomework = new ReadAnswerShortenAndLearnByHeartHomework();
-        Teacher teacher = new Teacher(answerHomework, basicHomework, shortenArticleHomework, readAnswerShortenAndLearnByHeartHomework, readAnswerQuestionLearnByHeartHomework);
+        Teacher teacher = new Teacher(basicHomework, answerHomework, shortenArticleHomework, readAnswerShortenAndLearnByHeartHomework, readAnswerQuestionLearnByHeartHomework);
         //zbyt duzo rzeczy w konstuktorze i latwo sie pomylic
         teacher.doHomework();
     }

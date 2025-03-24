@@ -9,9 +9,9 @@ public class Teacher {
     private ReadAnswerShortenAndLearnByHeartHomework readAnswerShortenAndLearnByHeartHomework;
     private ReadAnswerQuestionLearnByHeartHomework readAnswerQuestionLearnByHeartHomework;
 
-    public Teacher(AnswerHomework answerHomework, BasicHomework basicHomework, ShortenArticleHomework shortenArticleHomework, ReadAnswerShortenAndLearnByHeartHomework readAnswerShortenAndLearnByHeartHomework, ReadAnswerQuestionLearnByHeartHomework readAnswerQuestionLearnByHeartHomework) {
-        this.answerHomework = answerHomework;
+    public Teacher(BasicHomework basicHomework, AnswerHomework answerHomework,  ShortenArticleHomework shortenArticleHomework, ReadAnswerShortenAndLearnByHeartHomework readAnswerShortenAndLearnByHeartHomework, ReadAnswerQuestionLearnByHeartHomework readAnswerQuestionLearnByHeartHomework) {
         this.basicHomework = basicHomework;
+        this.answerHomework = answerHomework;
         this.shortenArticleHomework = shortenArticleHomework;
         this.readAnswerShortenAndLearnByHeartHomework = readAnswerShortenAndLearnByHeartHomework;
         this.readAnswerQuestionLearnByHeartHomework = readAnswerQuestionLearnByHeartHomework;
@@ -25,9 +25,9 @@ public class Teacher {
         Scanner scanner = new Scanner(System.in);
         int option = scanner.nextInt();
         if (option == 1) {//jest ifologia
-            answerHomework.doHomework();
-        } else if (option == 2) {
             basicHomework.doHomework();
+        } else if (option == 2) {
+            answerHomework.doHomework();
         } else if (option == 3) {
             shortenArticleHomework.doHomework();
         } else if (option == 4) {

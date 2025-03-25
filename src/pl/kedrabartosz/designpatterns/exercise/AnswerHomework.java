@@ -1,6 +1,5 @@
 package pl.kedrabartosz.designpatterns.exercise;
 
-import java.util.BitSet;
 
 //answer  - basic + "odpoweidzi"
 public class AnswerHomework extends BasicHomework {

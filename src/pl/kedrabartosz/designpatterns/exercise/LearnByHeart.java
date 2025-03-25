@@ -1,15 +1,16 @@
 package pl.kedrabartosz.designpatterns.exercise;
 
-public class ShortenArticleHomework extends BasicHomework {
+public class LearnByHeart extends BasicHomework{
     private BasicHomework basicHomework;
 
-    public ShortenArticleHomework(BasicHomework basicHomework) {
+    public LearnByHeart(BasicHomework basicHomework) {
         this.basicHomework = basicHomework;
     }
 
     @Override
     public void doHomework() {
         this.basicHomework.doHomework();
-        System.out.println("and shorten");
+        System.out.println("and learn by heart");
     }
 }
+

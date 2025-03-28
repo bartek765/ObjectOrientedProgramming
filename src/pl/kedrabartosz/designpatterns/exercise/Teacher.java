@@ -1,14 +1,12 @@
 package pl.kedrabartosz.designpatterns.exercise;
 
-import java.util.Scanner;
-
 public class Teacher {
     private AnswerHomework answerHomework;
     private BasicHomework basicHomework;
     private ShortenArticleHomework shortenArticleHomework;
     private LearnByHeart readAnswerQuestionLearnByHeartHomework;
 
-    public Teacher(BasicHomework basicHomework, AnswerHomework answerHomework, ShortenArticleHomework shortenArticleHomework,  LearnByHeart readAnswerQuestionLearnByHeartHomework) {
+    public Teacher(BasicHomework basicHomework, AnswerHomework answerHomework, ShortenArticleHomework shortenArticleHomework, LearnByHeart readAnswerQuestionLearnByHeartHomework) {
         this.basicHomework = basicHomework;
         this.answerHomework = answerHomework;
         this.shortenArticleHomework = shortenArticleHomework;

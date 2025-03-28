@@ -6,14 +6,12 @@ public class Teacher {
     private AnswerHomework answerHomework;
     private BasicHomework basicHomework;
     private ShortenArticleHomework shortenArticleHomework;
-    private ReadAnswerShortenAndLearnByHeartHomework readAnswerShortenAndLearnByHeartHomework;
     private LearnByHeart readAnswerQuestionLearnByHeartHomework;
 
-    public Teacher(BasicHomework basicHomework, AnswerHomework answerHomework,  ShortenArticleHomework shortenArticleHomework, ReadAnswerShortenAndLearnByHeartHomework readAnswerShortenAndLearnByHeartHomework, LearnByHeart readAnswerQuestionLearnByHeartHomework) {
+    public Teacher(BasicHomework basicHomework, AnswerHomework answerHomework, ShortenArticleHomework shortenArticleHomework,  LearnByHeart readAnswerQuestionLearnByHeartHomework) {
         this.basicHomework = basicHomework;
         this.answerHomework = answerHomework;
         this.shortenArticleHomework = shortenArticleHomework;
-        this.readAnswerShortenAndLearnByHeartHomework = readAnswerShortenAndLearnByHeartHomework;
         this.readAnswerQuestionLearnByHeartHomework = readAnswerQuestionLearnByHeartHomework;
     }
 
@@ -27,8 +25,6 @@ public class Teacher {
             answerHomework.doHomework();
         } else if (shortenArticleHomework != null) {
             shortenArticleHomework.doHomework();
-        } else if (readAnswerShortenAndLearnByHeartHomework != null) {
-            readAnswerShortenAndLearnByHeartHomework.doHomework();
         } else {
             readAnswerQuestionLearnByHeartHomework.doHomework();
         }

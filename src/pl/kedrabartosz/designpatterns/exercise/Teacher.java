@@ -1,32 +1,16 @@
 package pl.kedrabartosz.designpatterns.exercise;
 
-import java.util.Scanner;
-
+// strategia
 public class Teacher {
-    private AnswerHomework answerHomework;
-    private BasicHomework basicHomework;
-    private ShortenArticleHomework shortenArticleHomework;
-    private LearnByHeart readAnswerQuestionLearnByHeartHomework;
+  private BasicHomework homework;
 
-    public Teacher(BasicHomework basicHomework, AnswerHomework answerHomework, ShortenArticleHomework shortenArticleHomework,  LearnByHeart readAnswerQuestionLearnByHeartHomework) {
-        this.basicHomework = basicHomework;
-        this.answerHomework = answerHomework;
-        this.shortenArticleHomework = shortenArticleHomework;
-        this.readAnswerQuestionLearnByHeartHomework = readAnswerQuestionLearnByHeartHomework;
-    }
+  public Teacher(BasicHomework homework) {
+    this.homework = homework;
+  }
 
-    // juz jest duzo pol bo jest ponad 4 i gdyby doszla kolejna werjsa
-// zadania domowego to by trzeba bylo dalej dodac kolejne pola oraz ifa
-    // ifologia dalej została
-    public void doHomework() {
-        if (basicHomework != null) {
-            basicHomework.doHomework();
-        } else if (answerHomework != null) {
-            answerHomework.doHomework();
-        } else if (shortenArticleHomework != null) {
-            shortenArticleHomework.doHomework();
-        } else {
-            readAnswerQuestionLearnByHeartHomework.doHomework();
-        }
-    }
+  public void doHomework() {
+    System.out.println("teacher zadaje zadania:");
+    // przykład polimorfizmu
+    homework.doHomework();
+  }
 }

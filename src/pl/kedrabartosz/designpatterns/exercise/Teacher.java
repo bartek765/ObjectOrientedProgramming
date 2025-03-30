@@ -6,7 +6,7 @@ public class Teacher {
     private ShortenArticleHomework shortenArticleHomework;
     private LearnByHeart readAnswerQuestionLearnByHeartHomework;
 
-    public Teacher(BasicHomework basicHomework, AnswerHomework answerHomework, ShortenArticleHomework shortenArticleHomework, LearnByHeart readAnswerQuestionLearnByHeartHomework) {
+    public Teacher(BasicHomework basicHomework) {
         this.basicHomework = basicHomework;
         this.answerHomework = answerHomework;
         this.shortenArticleHomework = shortenArticleHomework;

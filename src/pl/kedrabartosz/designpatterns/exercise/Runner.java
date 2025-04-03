@@ -10,7 +10,6 @@ public class Runner {
         var readAnswerQuestionLearnByHeartAndShorten = new ShortenArticleHomework(readAnswerQuestionLearnByHeart);
 
         Teacher teacher = new Teacher(readAnswerQuestionLearnByHeartAndShorten);
-        //zbyt duzo rzeczy w konstuktorze i latwo sie pomylic
-        teacher.doHomework();
+        teacher.giveHomework();
     }
 }

@@ -8,6 +8,7 @@ public class Dancer {
     }
 
     public void perform(){
-        System.out.println("she dances and makes " + pirouette.doPirouette() + " pirouettes");
+        System.out.println("she dances and makes "
+                + pirouette.doPirouette() + " pirouettes");
     }
 }

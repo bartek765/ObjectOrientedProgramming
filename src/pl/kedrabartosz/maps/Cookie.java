@@ -2,9 +2,9 @@ package pl.kedrabartosz.maps;
 
 import java.util.Objects;
 
-public class Cookie {
-     String color;
-     String stuffing;
+public final class Cookie {
+     private final String color;
+     private final String stuffing;
 
     public Cookie(String color, String stuffing) {
         this.color = color;
@@ -12,7 +12,7 @@ public class Cookie {
     }
 
     @Override
-    public String toString() {
+    public final String toString() {
         return "Cookie{" +
                 "color='" + color + '\'' +
                 ", stuffing='" + stuffing + '\'' +
@@ -33,4 +33,17 @@ public class Cookie {
         result = 31 * result + Objects.hashCode(stuffing);
         return result;
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getStuffing() {
+        return stuffing;
+    }
+
+    // jak jest final to nie może być settera
+//    public void setColor(String color) {
+//        this.color = color;
+//    }
 }

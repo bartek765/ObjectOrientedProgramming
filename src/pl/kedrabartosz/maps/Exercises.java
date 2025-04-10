@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class exercises {
+public class Exercises {
     public static void main(String[] args) {
         Map<String, Integer> map = new HashMap<>();
         map.put("Anna", 2);
@@ -117,15 +117,15 @@ public class exercises {
         map.put("Franciszek", map.get("Franciszek") * 2);
         System.out.println(map.get("Franciszek"));
         //exercise 78
-        for (String keyss : map.keySet()) {
-            if (map.get(keyss) > 5) {
-                System.out.println(keyss);
+        for (String key1 : map.keySet()) {
+            if (map.get(key1) > 5) {
+                System.out.println(key1);
             }
         }
         //exercise 79
-        for (String keysss : map.keySet()) {
-            if (map.get(keysss) > 10) {
-                System.out.println(keysss);
+        for (String key1 : map.keySet()) {
+            if (map.get(key1) > 10) {
+                System.out.println(key1);
             }
         }
         //exercise 80

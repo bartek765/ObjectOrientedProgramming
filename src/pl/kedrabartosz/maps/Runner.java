@@ -28,10 +28,42 @@ public class Runner {
         cookies.add(cookie7);
         cookies.add(cookie8);
         cookies.add(cookie9);
-        System.out.println("zliczanie z counterami:");
-        countingList(cookies);
-        System.out.println("\n liczanie z mapami:");
-        countingListWithMap(cookies);
+//        System.out.println("zliczanie z counterami:");
+//        countingList(cookies);
+
+//        System.out.println("\n liczanie z mapami:");
+        Map<Cookie, Integer> map2 = new HashMap<>();
+        map2.put(cookie1, 1);
+        // 123 -> (cookie1, 1)
+        map2.put(cookie2, 2);
+        // 123 -> (cookie1 -> 1)
+        // 456 -> (cookie2 -> 2)
+        System.out.println(map2.get(cookie1));
+
+//        cookie1.setColor("multikolorowy");
+        System.out.println("po setterze:");
+        System.out.println(map2.get(cookie1));
+
+//        cookie1.setColor("yellow");
+        System.out.println("po powrocie do yellow");
+        System.out.println(map2.get(cookie1));
+        // countingListWithMap(cookies);
+
+
+        CookieJar cookieJar = new CookieJar(cookies);
+        List<Cookie> cookiesFromJar = cookieJar.getCookies();
+        System.out.println(cookieJar.getCookies().size());
+        System.out.println(cookiesFromJar.size());
+
+        System.out.println("po add");
+        cookiesFromJar.add(new Cookie("brown", "choco"));
+        System.out.println(cookiesFromJar.size());
+        System.out.println(cookieJar.getCookies().size());
+
+
+    }
+
+    private static void equalsVsReferences() {
         System.out.println("\n\n == vs equals");
         Cookie cookieyellow1 = new Cookie("yellow", "lemon");
         Cookie cookieyellow2 = new Cookie("yellow", "lemon");
@@ -57,15 +89,15 @@ public class Runner {
 
         for (int i = 0; i < cookies.size(); i++) { // przechodzimy petla przez liste
             Cookie cookie = cookies.get(i); // i dla kazdego elementu  o roboczej nazwie cookie
-            if (cookie.color.equals("blue")) { // sprawdzamy jego kolor: jesli kolor jest jednym ze spodziewanych
+            if (cookie.getColor().equals("blue")) { // sprawdzamy jego kolor: jesli kolor jest jednym ze spodziewanych
                 blue++; // to inkrementujemy odpowiedni licznik
-            } else if (cookie.color.equals("yellow")) {
+            } else if (cookie.getColor().equals("yellow")) {
                 yellow++;
-            } else if (cookie.color.equals("green")) {
+            } else if (cookie.getColor().equals("green")) {
                 green++;
-            } else if (cookie.color.equals("orange")) {
+            } else if (cookie.getColor().equals("orange")) {
                 orange++;
-            } else if (cookie.color.equals("pink")) {
+            } else if (cookie.getColor().equals("pink")) {
                 pink++;
             }
         }

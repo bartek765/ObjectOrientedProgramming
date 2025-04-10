@@ -1,7 +1,9 @@
 package pl.kedrabartosz.maps;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Runner {
     public static void main(String[] args) {
@@ -26,17 +28,21 @@ public class Runner {
         cookies.add(cookie7);
         cookies.add(cookie8);
         cookies.add(cookie9);
-       // countingList(cookies);
-        Cookie cookieyellow1 = new Cookie("yellow","lemon");
-        Cookie cookieyellow2 = new Cookie("yellow","lemon");
-        if (cookieyellow2 == cookieyellow1){
+        System.out.println("zliczanie z counterami:");
+        countingList(cookies);
+        System.out.println("\n liczanie z mapami:");
+        countingListWithMap(cookies);
+        System.out.println("\n\n == vs equals");
+        Cookie cookieyellow1 = new Cookie("yellow", "lemon");
+        Cookie cookieyellow2 = new Cookie("yellow", "lemon");
+        if (cookieyellow2 == cookieyellow1) {
             System.out.println("true");
-        }else {
+        } else {
             System.out.println("false");
         }
-        if (cookieyellow2.equals(cookieyellow1)){
+        if (cookieyellow2.equals(cookieyellow1)) {
             System.out.println("true");
-        }else {
+        } else {
             System.out.println("false");
         }
     }
@@ -70,9 +76,25 @@ public class Runner {
         System.out.println("orange: " + orange);
         System.out.println("pink: " + pink);
     }
-}// powtorzyc metody w klasie object! gdzie sie daje metode i zasady
+
+    // powtorzyc metody w klasie object! gdzie sie daje metode i zasady
 // clean code! oraz jak definiujemy listy takze powtorzyc listof ktore
 // poznalem(jest ona nie mutowalna, nie akcetpuje null dobra do stalych danych)
 // List<String> fruits = List.of("jabłko", "banan"); nie mozna
 // potem nic dodawac usuwac itd jest stala! i++ = inkrementujemy!!!!
 // przechodzimy przez liste
+    public static void countingListWithMap(List<Cookie> cookies) {
+        Map<Cookie, Integer> cookieToOccurrence = new HashMap<>();
+        for (int i = 0; i < cookies.size(); i++) {
+            Cookie cookie = cookies.get(i);
+            if (cookieToOccurrence.containsKey(cookie)) {// jesli mamy taki klucz juz
+                int value = cookieToOccurrence.get(cookie); // bierzemy co bylo wczesniej
+                value++;// inkrementujemy o 1
+                cookieToOccurrence.put(cookie, value); // nadpisujemy w mapie
+            } else {
+                cookieToOccurrence.put(cookie, 1);// jesli taki klucz nie wystapil to dodaj go po raz 1
+            }
+        }
+        System.out.println(cookieToOccurrence);
+    }
+}

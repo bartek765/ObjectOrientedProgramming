@@ -1,9 +1,12 @@
 package pl.kedrabartosz.maps.exercise;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class PanTadeusz {
     public static void main(String[] args) {
@@ -20,6 +23,11 @@ public class PanTadeusz {
         checkExerciseTwo(exerciseTwo(invocation));
         System.out.println("3:");
         checkExerciseThree(exerciseThree(invocation));
+
+        Map<Integer,Integer> m = new HashMap<>();
+        Map<Integer,Integer> mL = new LinkedHashMap<>(); // linked -> trzyma kolejnosc
+        Map<Integer,Integer> mT = new TreeMap<>(); // klucze są posortowane
+
     }
 
     private static Map<Character, Integer> exerciseOne(String invocation) {
@@ -70,9 +78,10 @@ public class PanTadeusz {
         Map<Character, List<String>> wordsPerLetter = new HashMap<>();
 
         for (String word : words) {
-            if (!word.isEmpty()) {//Wykonuj dalsze operacje tylko, jeśli słowo NIE jest puste.!!!”
+            if (!word.isEmpty()) {//mega bezpieczne - w tym przypadku nadmiarowe, Wykonuj dalsze operacje tylko, jeśli słowo NIE
+                // jest puste.!!!”
                 char firstLetter = word.charAt(0);// charAt(0) bierze znak na 0 indexie czyli pierwszy znak
-                wordsPerLetter.computeIfAbsent(firstLetter, k -> new java.util.ArrayList<>()).add(word);
+                wordsPerLetter.computeIfAbsent(firstLetter, k -> new ArrayList<>()).add(word);
                 //computifabsent sprawdza czy w mapie istnieje klucz firstletter jesli tak zwraca przypisana wartosc jak
                 // nie to tworzy nowa wartosc przypisuje ja do tego klucza i zwraca!
             }

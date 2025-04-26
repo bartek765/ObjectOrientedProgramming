@@ -64,7 +64,8 @@ public class Patient {
             this.illness = illness;
             return this;
         }
-        public Patient build(){
+
+        public Patient build() {
             return new Patient(this);
         }
     }

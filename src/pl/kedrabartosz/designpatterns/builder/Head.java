@@ -10,14 +10,13 @@ public class Head {
                 .build();
     }
 
-    class Shampoo {
-
-    }
-
     private int length;
     private Shampoo shampoo;
     private String colour;
     private double thickness;
+
+    class Shampoo {
+    }
 
     private Head(HeadBuilder headBuilder) {
         this.length = headBuilder.length;

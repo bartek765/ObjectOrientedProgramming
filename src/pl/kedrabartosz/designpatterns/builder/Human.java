@@ -11,12 +11,13 @@ public class Human {
                 .build();
     }
 
-    public class Coffee {
-    }
 
     private Coffee coffee;
     private int energyLevel;
     private Instant lastTimeHadCoffee;
+
+    public class Coffee {
+    }
 
     private Human(HumanBuilder humanBuilder) {
         this.coffee = humanBuilder.coffee;

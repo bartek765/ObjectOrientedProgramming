@@ -10,13 +10,14 @@ public class Pot {
                 .build();
     }
 
-    public class Flower {
-    }
 
     private Flower flower;
     private String typeOfGround;
     private double lightLevel;
     private double hydrationLevel;
+
+    public class Flower {
+    }
 
     private Pot(PotBuilder potBuilder) {
         this.flower = potBuilder.flower;
